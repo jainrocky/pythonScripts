@@ -10,7 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import preprocessing,cross_validation,svm
 
-df = pd.read_csv(r'C:\Users\Rocky Jain\MachineLearning Breast Cancer- Original(UCI DATA SET)\weight_dataset\balance-scale.data.txt')
+df = pd.read_csv(r'balance-scale.data.txt')
 
 encoder = preprocessing.LabelEncoder()
 df['class'] = encoder.fit_transform(df['class'])
